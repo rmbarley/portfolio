@@ -1,0 +1,43 @@
+/* portfolio Section */
+section.portfolio {
+  align-items: center;
+  & p {
+    max-width: 100%;
+  }
+}
+
+.grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  & li {
+    padding: 50px;
+    flex-basis: 50%;
+    text-align: center;
+    width: 33%;
+    & img {
+      max-width: 100%;
+      border: 1px solid #555;
+    }
+    & h4 {
+      font-size: 30px;
+      margin: 21px 0;
+    }
+    & a {
+      color: #555;
+      padding: 6px 15px;
+      opacity: 0.75;
+      border: 1px solid #555;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .grid li {
+    flex-basis: 100%;
+  }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ryan Barley</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.3/js/all.js"></script>
+  <link rel="stylesheet" href="assets/styles/styles-4d13bd6fbe.css"/>
+</head>
+<body>
+  <header>
+    <h2><a href="#">Ryan Barley</a></h2>
+    <nav>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="http://rmbarley.github.io/resume">Resume</a></li>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="background-image" style="background-image: url(./assets/images/cover.jpg);"></div>
+    <div class="hero-content-area">
+      <h1>Ryan Barley</h1>
+      <h3>Frontend/Backend/Data</h3>
+      <a href="#about" class="btn">
+        Let's Get Started   <i class="fa fa-arrow-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+      <h3 class="title">Nice to meet you.</h3>
+      <h4>I'm Ryan</h4>
+      <p>I am a front end developer based in Cincinnati, OH. I graduated with degrees in English and physics from MCLA in North Adams, MA and have since worked as a science journalist, research historian, barista and software tester.</p>
+    <h4 class="title">What I Can Do</h4>
+    <div class="btn-container">
+      <a class="about--button" id="group">
+        <i class="fas fa-angle-left"></i> Group Skills <i class="fas fa-angle-right"></i>
+      </a>
+      <a class="about--button" id="combine">
+        <i class="fas fa-angle-right"></i> Combine <i class="fas fa-angle-left"></i>
+      </a>
+    </div>
+    <div class="skill-categories hidden">
+      <h3>Front End</h3>
+      <h3>Back End</h3>
+      <h3>Other</h3>
+    </div>
+    <div class="chart"></div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <h3 class="title">Portfolio</h3>
+    <p>A small collection of what I've made, both professionally and for personal interest.</p>
+    <ul class="grid">
+      <li>
+        <h4>Community Resource Map</h4>
+        <img src="./assets/images/plcmap.png" />
+        <p>
+          An interactive map of resources available to residents of Rochester, NY made in conjunction with University of Rochester medical students, who provided the data. It uses JavaScript, jQuery, and the Mapbox library.
+        </p>
+        <a class="btn" href="http://rmbarley.github.io/plc-map" target="_blank">See it Live</a>
+
+      </li>
+      <li>
+        <h4>Interactive Water Treatment</h4>
+        <img src="./assets/images/wastewater.png" />
+        <p>This app was intended to provide an interactive overview of a Water/Wastewater treatment facility. Renders and videos were provided by an illustrator. It's styled with SCSS and uses JavaScript, jQuery, and a jQuery library called ImageMapster to create an image map that pointed to the different facilities in the facility.</p>
+        <a class="btn" href="https://d30b65n8jc7wth.cloudfront.net/" target="_blank">See it Live</a>
+      </li>
+      <li>
+        <h4>Markdown Previewer</h4>
+        <img src="./assets/images/markdown.png" />
+        <p>A Github-flavored markdown previewer built using React.</p>
+        <a class="btn" href="https://rmbarley.github.io/markdown-preview" target="_blank">See it Live</a>
+      </li>
+      <li>
+        <h4>ReacTodo</h4>
+        <img src="./assets/images/reactodo.png" />
+        <p>A basic searchable todo app made in React. It's backend is Node, and the data is handled by the localstorage API</p>
+        <a class="btn" href="http://still-springs-34556.herokuapp.com/" target="_blank">See it Live</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contact" id="contact">
+    <h3 class="title">Get in touch</h3>
+    <!-- <hr> -->
+    <div class="half">
+      <p>
+        I'm excited to work with you! If you think I would be the right fit for that project you're working on, then feel free to reach out.</p>
+
+      <form id="gform" method="POST"
+        action="https://script.google.com/macros/s/AKfycbxG1yX-fDpzeIhUFHNnHkLxG5YlBfHhK5YYN67ZT6hd5aBY7K0/exec">
+          <label class="sr-only" for="name">Name</label>
+          <input id="name" name="name" placeholder="Your Name" />
+          <label class="sr-only" for="email">Email Address:</label>
+          <input id="email" name="email" type="email"
+          required placeholder="your.name@email.com"/>
+          <label class="sr-only" for="message">Message</label>
+          <textarea id="message" name="message" rows="10"
+          placeholder="What can I do for you?"></textarea>
+          <label class="sr-only">Keep this field blank</label>
+          <input id="honeypot" type="text" name="honeypot" value="" />
+          <button id="submit" type="submit"><i class="fa fa-paper-plane"></i></button>
+      </form>
+    </div>
+
+    <div style="display:none;" id="thankyou_message">
+      <h2>Thanks! I'll get back to you soon.</h2>
+    </div>
+  </section>
+
+  <footer>
+    <p>Copyright &copy; 2018. All rights reserved.</p>
+      <ul>
+        <li><a href="http://twitter.com/rmbarley"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+        <li><a href="http://github.com/rmbarley"><i class="fab fa-github-square fa-2x"></i></a></li>
+        <li><a href="http://linkedin.com/in/rmbarley"><i class="fab fa-linkedin fa-2x"></i></a></li>
+      </ul>
+    </footer>
+    <script src="assets/scripts/App-4b356a74cb.js"></script>
+  </body>
+</html>

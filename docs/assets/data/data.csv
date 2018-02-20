@@ -1,0 +1,21 @@
+id,name,strength,grouping,icon
+html,HTML5,100,frontend,./assets/images/icons/html.svg
+css,CSS 3,100,frontend,./assets/images/icons/css.png
+bootstrap,Bootstrap 4,100,frontend,./assets/images/icons/bootstrap.svg
+sass,SASS,75,frontend,./assets/images/icons/sass.svg
+javascript,JavaScript,90,frontend,./assets/images/icons/js.svg
+jquery,jQuery,90,frontend,./assets/images/icons/jquery.svg
+react,React,75,frontend,./assets/images/icons/react.svg
+node,NodeJS,75,backend,./assets/images/icons/node.png
+mongo,MongoDB,75,backend,./assets/images/icons/mongo.png
+r,R,50,other,https://www.r-project.org/logo/Rlogo.svg
+python,Python 3,50,other,./assets/images/icons/python.svg
+git,Git/GitHub,100,other,./assets/images/icons/github.svg
+java,Java,25,other,./assets/images/icons/java.svg
+ruby,Ruby,25,other,./assets/images/icons/prog-ruby.svg
+csharp,C#,10,other,./assets/images/icons/csharp.png
+d3,D3,50,other,./assets/images/icons/d3.svg
+cli,CLI,78,other,./assets/images/icons/bash.png
+matlab,Matlab,60,other,./assets/images/icons/matlab.png
+express,ExpressJS,70,backend,./assets/images/icons/express.png
+django,Django,10,backend,./assets/images/icons/django.svg
