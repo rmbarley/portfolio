@@ -19997,7 +19997,8 @@ const svg = __WEBPACK_IMPORTED_MODULE_0_d3__["j" /* select */]('.chart')
 const div = __WEBPACK_IMPORTED_MODULE_0_d3__["j" /* select */]('body')
   .append('div')
   .attr('class', 'tooltip')
-  .style('opacity', 0);
+  .style('opacity', 0)
+  .style('display', 'none');
 const radiusScale = __WEBPACK_IMPORTED_MODULE_0_d3__["i" /* scaleSqrt */]()
   .domain([25, 100])
   .range([30, 60]);
@@ -20043,7 +20044,8 @@ function ready(err, data) {
       div
         .transition()
         .duration(200)
-        .style('opacity', 0.9);
+        .style('opacity', 0.9)
+        .style('display', 'inline');
       div
         .html(d.name)
         .style('left', __WEBPACK_IMPORTED_MODULE_0_d3__["b" /* event */].pageX + 'px')
@@ -20053,7 +20055,8 @@ function ready(err, data) {
       div
         .transition()
         .duration(500)
-        .style('opacity', 0);
+        .style('opacity', 0)
+        .style('display', 'none');
     });
   let skillBar = __WEBPACK_IMPORTED_MODULE_0_d3__["j" /* select */]('.skill-categories');
 
@@ -20107,7 +20110,8 @@ function ready(err, data) {
       div
         .transition()
         .duration(200)
-        .style('opacity', 0.9);
+        .style('opacity', 0.9)
+        .style('display', 'inline');
       div
         .html(d.name)
         .style('left', __WEBPACK_IMPORTED_MODULE_0_d3__["b" /* event */].pageX + 'px')
@@ -20117,7 +20121,8 @@ function ready(err, data) {
       div
         .transition()
         .duration(500)
-        .style('opacity', 0);
+        .style('opacity', 0)
+        .style('display', 'none');
     });
 }
 

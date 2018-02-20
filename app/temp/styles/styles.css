@@ -97,6 +97,7 @@ div.tooltip {
   border: 1px solid #555;
   border-radius: 8px;
   pointer-events: none;
+  display: none;
 }
 
 /* Header Styles */

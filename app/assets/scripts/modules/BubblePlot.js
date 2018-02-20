@@ -17,7 +17,8 @@ const div = d3
   .select('body')
   .append('div')
   .attr('class', 'tooltip')
-  .style('opacity', 0);
+  .style('opacity', 0)
+  .style('display', 'none');
 const radiusScale = d3
   .scaleSqrt()
   .domain([25, 100])
@@ -67,7 +68,8 @@ function ready(err, data) {
       div
         .transition()
         .duration(200)
-        .style('opacity', 0.9);
+        .style('opacity', 0.9)
+        .style('display', 'inline');
       div
         .html(d.name)
         .style('left', d3.event.pageX + 'px')
@@ -77,7 +79,8 @@ function ready(err, data) {
       div
         .transition()
         .duration(500)
-        .style('opacity', 0);
+        .style('opacity', 0)
+        .style('display', 'none');
     });
   let skillBar = d3.select('.skill-categories');
 
@@ -131,7 +134,8 @@ function ready(err, data) {
       div
         .transition()
         .duration(200)
-        .style('opacity', 0.9);
+        .style('opacity', 0.9)
+        .style('display', 'inline');
       div
         .html(d.name)
         .style('left', d3.event.pageX + 'px')
@@ -141,6 +145,7 @@ function ready(err, data) {
       div
         .transition()
         .duration(500)
-        .style('opacity', 0);
+        .style('opacity', 0)
+        .style('display', 'none');
     });
 }
